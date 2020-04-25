@@ -2,7 +2,7 @@
   <div id="app">
     <div class="nav">
       <div class="brand">
-        <router-link to="/">Kiana Cao!</router-link>
+        <router-link to="/">Kiana Cao</router-link>
       </div>
       <div class="nav-item">
         <router-link to="/work">WORK</router-link>
