@@ -1,14 +1,34 @@
 <template>
   <div id="app">
-    <div class="nav">
-      <div class="brand">
-        <router-link to="/">Kiana Cao</router-link>
-      </div>
-      <div class="nav-item">
-        <router-link to="/work">WORK</router-link>
-        <router-link to="/about">ABOUT</router-link>
-        <router-link to="/contact">CONTACT</router-link>
-      </div>
+    <div>
+      <b-navbar toggleable="lg" type="light">
+        <router-link to="/">
+          <b-navbar-brand>
+            Kiana Cao
+          </b-navbar-brand>
+        </router-link>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <b-navbar-nav>
+              <b-nav-item>
+                <router-link class="nav-link" to="/work">WORK</router-link>
+              </b-nav-item>
+              <b-nav-item>
+                <router-link class="nav-link" to="/about">ABOUT</router-link>
+              </b-nav-item>
+              <b-nav-item>
+                <router-link class="nav-link" to="/contact"
+                  >CONTACT</router-link
+                >
+              </b-nav-item>
+            </b-navbar-nav>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </div>
     <router-view />
   </div>
@@ -23,30 +43,7 @@
   color: #2c3e50;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  padding: 0 50px;
-  border-bottom: 1px solid lightgray;
-}
-
-.brand {
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 15px;
-  }
-}
-
-.nav-item {
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    margin-right: 25px;
-    text-decoration: none;
-  }
+.nav-link {
+  text-decoration: none;
 }
 </style>
