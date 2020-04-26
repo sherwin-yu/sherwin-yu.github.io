@@ -33,6 +33,14 @@
   border-bottom: 1px solid lightgray;
 }
 
+.brand {
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+}
+
 .nav-item {
   a {
     font-weight: bold;
