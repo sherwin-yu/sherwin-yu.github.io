@@ -29,7 +29,6 @@
   justify-content: space-between;
   height: 50px;
   padding: 0 50px;
-  margin-bottom: 15px;
   border-bottom: 1px solid lightgray;
 }
 
@@ -38,6 +37,7 @@
     text-decoration: none;
     color: black;
     font-size: 18px;
+    padding: 15px;
   }
 }
 
