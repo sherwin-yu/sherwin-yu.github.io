@@ -6,8 +6,8 @@
       </div>
       <div class="nav-item">
         <router-link to="/work">WORK</router-link>
-        <a>RESUME</a>
-        <a>CONTACT</a>
+        <router-link to="/about">ABOUT</router-link>
+        <router-link to="/contact">CONTACT</router-link>
       </div>
     </div>
     <router-view />
@@ -15,7 +15,7 @@
 </template>
 
 <!-- Your global styles here -->
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -33,13 +33,12 @@
   border-bottom: 1px solid lightgray;
 }
 
-.nav-item a {
-  font-weight: bold;
-  color: #2c3e50;
-  margin-right: 25px;
-}
-
-.nav-item a.router-link-exact-active {
-  color: #42b983;
+.nav-item {
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 25px;
+    text-decoration: none;
+  }
 }
 </style>
